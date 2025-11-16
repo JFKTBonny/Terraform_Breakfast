@@ -6,3 +6,4 @@ resource "aws_instance" "hello_world" { #A
 
 #A Resource blocks map to specific infrastructure.
 #B This is typically set as a variable, not hard coded.
+

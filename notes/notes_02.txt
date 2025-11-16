@@ -1,0 +1,24 @@
+**********************************************************************
+NOTES:
+**********************************************************************
+
+    1- Modules:  are the primary way that code is sharedamongst developers using Terraform.
+       ########
+
+    2- Input variables:  are used to customize module behavior by passing data into a module.
+       ###############
+
+    3- Output variables:  allow module users to pull information out of a module for reuse.
+       #################
+
+    4- Local variables:  exist only inside modules and are used for internal data and logic processing.
+       ###############
+
+    5- All values:  have a type, and inputs can be restricted to a specific type.
+       ##########
+
+    6- Terraform:  has many types, such as strings, numbers,booleans, lists, sets, tuples, objects, and maps.
+       #########
+
+    7- Input variables:  can have additional validation checksusing custom logic.
+       ###############
