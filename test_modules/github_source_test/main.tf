@@ -1,7 +1,7 @@
 
 
 module "ec2-instance" {
-    source = "https://github.com/JFKTBonny/Terraform_Breakfast/test_modules/github_source_test"
+    source = "https://github.com/JFKTBonny/Terraform_Breakfast/modules/ec2_instance"
     region = "us-east-1"
     instance_type = "t2.micro"
     aws_ami = "ami-0ecb62995f68bb549"
