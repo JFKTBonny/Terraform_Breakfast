@@ -1,6 +1,6 @@
 
 
-module "ec2-instance" {
+module "ec2_instance" {
     source = "https://github.com/JFKTBonny/Terraform_Breakfast/modules/ec2_instance"
     region = "us-east-1"
     instance_type = "t2.micro"
