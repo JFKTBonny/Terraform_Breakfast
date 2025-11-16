@@ -1,0 +1,13 @@
+variable "description" {
+  description = "An optional description to apply to resources."
+  type        = string
+  default     = "" #A
+
+  validation { #B
+    condition     = length(var.description) <= 125
+    error_message = "The name can not be longer than 125 characters."
+  }
+}
+
+#A By default this is an empty string.
+#B Restrict the name to keep it from being too long.

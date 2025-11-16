@@ -1,0 +1,61 @@
+Use tfenv to Manage Multiple Versions (Recommended!)
+
+If you switch versions often:
+
+# Install tfenv (Linux | macOS)
+
+        git clone https://github.com/tfutils/tfenv ~/.tfenv
+        echo 'export PATH="$HOME/.tfenv/bin:$PATH"' >> ~/.bashrc
+        source ~/.bashrc
+
+# Install latest Terraform
+
+        tfenv install latest
+        tfenv use latest
+
+
+Now switching versions becomes simple:
+
+        tfenv list
+        tfenv use 1.8.3
+
+✨ Key Features of tfenv
+
+        1. Install any version easily
+                tfenv install latest
+                tfenv install 1.5.7
+
+        2. Switch Terraform versions instantly
+                tfenv use 1.5.7
+                tfenv use latest
+
+        3. Project-specific versions
+
+                Create a file in your project:
+
+                .project-folder/
+                └── .terraform-version
+
+
+                Inside:
+
+                1.6.2
+
+
+                Then when you enter the project directory:
+
+                tfenv install   # installs the exact version listed
+
+
+
+
+🔥 Bonus Tip
+
+        List all installed versions:
+
+                tfenv list
+
+
+        List all available versions:
+
+                tfenv list-remote
